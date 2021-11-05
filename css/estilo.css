@@ -1,0 +1,508 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/**********ESTILIZAÇÃO DA NAV***********/
+nav {
+  width: 100%;
+  height: 10vh;
+  background-color: #f67828;
+  position: fixed;
+  display: flex;
+  justify-content: right;
+  margin-right: 20px;
+  align-items: center;
+  z-index: 1;
+  top: 0;
+}
+#img-logo {
+  position: absolute;
+  left: 0;
+  width: 15%;
+  min-width: 150px;
+  margin-left: 20px;
+}
+nav ul li a:hover {
+  border-bottom: 3px solid black;
+}
+li {
+  margin-left: 30px;
+  display: inline-block;
+}
+li a {
+  display: flex;
+  text-decoration: none;
+  margin: 10px 10px;
+  color: black;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-bottom: 3px solid transparent;
+  transition: all 0.25s ease-in-out;
+}
+#btnDim,
+#btnAum {
+  background-color: transparent;
+  font-size: 1.5rem;
+}
+
+/* ************************botao mobile************* */
+#btnMenu {
+  display: none;
+}
+
+.container {
+  width: 90%;
+  background-color: #ffdab9;
+  margin: auto;
+}
+.info-init_img {
+  width: 100%;
+  height: calc(100vh - 50px);
+  background-image: url(../img/background-inicial2.jpg);
+  background-attachment: fixed;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-top: 55px;
+}
+.img-txt {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  margin-top: 100px;
+}
+.img-txt h1 {
+  font-size: 4rem;
+  text-shadow: 0 0 20px black;
+}
+.img-txt p {
+  font-size: 2rem;
+  text-shadow: 0 0 20px black;
+}
+.main-ceo_container {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  background-color: #f8f8ff;
+}
+.cards {
+  margin-top: 100px;
+}
+.visible {
+  display: block;
+}
+.cards-img img {
+  width: 100%;
+}
+.cards h2 {
+  text-align: center;
+  font-size: 1.7rem;
+}
+.cards p {
+  font-size: 1.5rem;
+  margin-bottom: 50px;
+}
+.servc-left,
+.servc-right {
+  width: 90%;
+  text-align: center;
+  margin: 60px auto;
+  font-size: 1.3rem;
+}
+.servc-left p {
+  width: 90%;
+  text-align: center;
+  margin: 40px auto;
+  font-size: 1.3rem;
+}
+.servc-right p {
+  width: 90%;
+  text-align: justify;
+  margin: 40px auto;
+  font-size: 1.3rem;
+}
+.fundadores,
+.titulo {
+  font-size: 16px;
+  text-align: center;
+}
+
+/* *****************************CALCULADORA************************** */
+.calc-calc {
+  width: 90%;
+  text-align: center;
+  margin: 140px auto;
+  font-size: 1.3rem;
+}
+.calc-inf {
+  width: 90%;
+  text-align: center;
+  margin: 100px auto;
+  font-size: 1.3rem;
+}
+.calc-inf p {
+  width: 90%;
+  text-align: center;
+  margin: 50px auto;
+  font-size: 1.3rem;
+}
+
+.container-calc {
+  min-width: 250px;
+  width: 50%;
+  background-color: #2e2e2e;
+  border: 1px solid orange;
+  border-radius: 10px;
+  height: 380px;
+  margin: 0 auto;
+}
+#display {
+  color: aliceblue;
+  width: 80%;
+  margin: 20px auto;
+}
+#memoria {
+  height: 40px;
+  border: 1px solid white;
+  text-align: right;
+  padding: 7px;
+}
+#entrada-saida {
+  font-size: 25px;
+  height: 40px;
+  border: 1px solid white;
+  text-align: right;
+  padding: 5px;
+}
+.container-teclados {
+  display: flex;
+  justify-content: center;
+  width: 85%;
+  margin: auto;
+}
+.container-teclado {
+  width: 80%;
+}
+#cientifica {
+  display: none;
+}
+#cientifica > input {
+  width: 33%;
+}
+#displayOpBt > input {
+  width: 33%;
+}
+#displayNumBt > input {
+  width: 33%;
+}
+#displayOpBt2 {
+  display: flex;
+  flex-direction: column;
+}
+#displayOpBt2 > input {
+  width: 50px;
+}
+.numBt {
+  float: left;
+  width: 42px;
+  height: 40px;
+  text-align: center;
+  cursor: pointer;
+}
+#b0 {
+  height: 40px;
+  text-align: center;
+  padding: 10px;
+  cursor: pointer;
+}
+#big {
+  width: 42px;
+  height: 81px;
+  text-align: center;
+  padding: 10px;
+  cursor: pointer;
+}
+#containerNum {
+  width: 100%;
+}
+
+/***************************INICIO FORM********************************/
+.form {
+  width: 80%;
+  min-width: 350px;
+  margin: 0 auto;
+  position: relative;
+  border-radius: 10px;
+  margin-bottom: 60px;
+}
+.talk h2 {
+  margin: 60px 0;
+}
+form select {
+  width: 60%;
+  height: 30px;
+  margin-bottom: 20px;
+}
+form textarea {
+  width: 60%;
+  resize: none;
+  margin-bottom: 20px;
+}
+form label {
+  margin: 10px 0;
+}
+.form-container {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.form-container input {
+  width: 60%;
+  height: 30px;
+  border: none;
+  background-color: whitesmoke;
+  color: orangered;
+  margin: 2px 0;
+  border-radius: 10px;
+}
+.form-container select {
+  width: 60%;
+  height: 30px;
+  background-color: white;
+  color: orangered;
+  border-radius: 10px;
+}
+input::placeholder {
+  color: orangered;
+}
+.modal-fundo-CEP,
+.modal-fundo-Campos {
+  display: none;
+}
+.txt-area {
+  background-color: #292929;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.btn-form-estilo {
+  margin-top: 5px;
+  margin-left: 10px;
+  font-weight: bold;
+  padding: 10px 15px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  height: 30px;
+  width: 60%;
+}
+.btn-form-estilo:hover {
+  color: orange;
+  background-color: black;
+}
+
+/****************************ESTILO MODAL***********************************/
+#caixaMaior {
+  display: none;
+  width: 500px;
+  height: 250px;
+  background-color: #f56411f6;
+  position: absolute;
+  bottom: 131px;
+  left: 233px;
+  border: solid 1px #7f7f7f;
+  border-radius: 5px;
+  text-align: center;
+}
+#faixaPreta {
+  width: 500px;
+  height: 50px;
+  background-color: rgb(10, 10, 10);
+}
+#cabecalhoCaixa {
+  font-size: 30px;
+  text-align: center;
+  color: rgb(215, 250, 247);
+  margin-top: 0;
+  padding-top: 10px;
+}
+.buttonClass {
+  font-size: 15px;
+  font-family: Arial;
+  width: 140px;
+  height: 50px;
+  border-width: 1px;
+  color: #fff;
+  border-color: rgba(0, 0, 0, 1);
+  font-weight: bold;
+  border-top-left-radius: 18px;
+  border-top-right-radius: 18px;
+  border-bottom-left-radius: 18px;
+  border-bottom-right-radius: 18px;
+  text-shadow: 0px 1px 0px rgba(0, 0, 0, 1);
+  background: linear-gradient(rgba(201, 78, 15, 1), rgba(0, 0, 0, 1));
+}
+.buttonClass:hover {
+  background: linear-gradient(rgba(0, 0, 0, 1), rgba(201, 78, 15, 1));
+}
+
+/**************************ESTILO FOOTER**********************************/
+.rodape {
+  background-color: orangered;
+  color: black;
+  width: 100%;
+  height: 50px;
+  /*margin-top:1px;*/
+  clear: both;
+  text-align: center;
+}
+.footerRedesSociais {
+  margin-top: 50px;
+  background-color: orangered;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*****************************ESTILO BANNER*********************************/
+#banner-container {
+  width: 300px;
+  margin-bottom: 20px;
+}
+#banner {
+  width: 100%;
+  height: 350px;
+  position: relative;
+  background-size: cover;
+}
+#btnLeft {
+  position: absolute;
+  cursor: pointer;
+  left: 0;
+  bottom: 50%;
+}
+#btnRight {
+  position: absolute;
+  cursor: pointer;
+  right: 0;
+  bottom: 50%;
+}
+
+/*******************************ESTILO OO*****************************/
+
+.container-cadastro {
+  width: 100%;
+  margin: 0 auto;
+  height: 500px;
+  background-color: #f8f8ff;
+  padding-top: 120px;
+  margin-bottom: 60px;
+}
+.container-cadastro h2 {
+  text-align: center;
+  margin-bottom: 60px;
+}
+.cadastro-nomes {
+  width: 100%;
+  text-align: center;
+}
+.cadastro-nomes input {
+  padding: 10px;
+  margin-right: 10px;
+  border-radius: 10px;
+  line-height: 1.5;
+  border: none;
+  outline: none;
+  background-color: #ffdab9;
+}
+#nomePessoa {
+  width: 30%;
+  justify-content: center;
+  text-align: center;
+}
+#nomeDog {
+  width: 30%;
+  justify-content: center;
+}
+.cadastro-btn {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+  margin-right: 20%;
+}
+button {
+  margin-top: 5px;
+  margin-left: 10px;
+  font-weight: bold;
+  padding: 10px 15px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+button:hover {
+  color: orange;
+  background-color: black;
+}
+.conteudo {
+  margin-top: 30px;
+}
+table {
+  width: 100%;
+  border: 1px solid orangered;
+}
+table th {
+  background-color: #ffa07a;
+  text-align: left;
+  color: black;
+  height: 30px;
+}
+table td {
+  background-color: #949494;
+  color: white;
+}
+table td img {
+  width: 24px;
+}
+.rodape {
+  background-color: orangered;
+  color: black;
+  width: 100%;
+  height: 50px;
+  clear: both;
+  text-align: center;
+}
+
+/* **************************MEDIA DO BTN MOBILE****************** */
+@media (max-width: 815px) {
+  #lista-nav {
+    display: none;
+    width: 100%;
+    position: absolute;
+    top: 75px;
+    background-color: #f67828;
+  }
+  #btnMenu {
+    display: block;
+    padding: 0.5rem 1rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+    color: black;
+    font-size: 1.5rem;
+  }
+  #lista-nav.active {
+    display: block;
+    position: fixed;
+  }
+}

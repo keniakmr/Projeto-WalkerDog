@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/estilo.css" />
+    <script
+      type="text/Javascript"
+      src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    ></script>
+    <title>Walkerdog</title>
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <img
+          id="img-logo"
+          src="img/horizontal_on_white_by_logaster__1_-removebg-preview.png"
+          alt="logo"
+        />
+        <button id="btnMenu">Menu</button>
+        <ul id="lista-nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#fundadores">Fundadores</a></li>
+          <li><a href="#servicos">Serviço</a></li>
+          <li><a href="#contato">Contato</a></li>
+          <button id="btnAum">A+</button>
+          <button id="btnDim">A-</button>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="container">
+        <section class="info-init">
+          <div class="info-init_img">
+            <img src="" />
+            <div class="img-txt">
+              <h1>Walkerdog</h1>
+              <p>A melhor opção de lazer para o seu cão</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="main-ceo">
+          <div class="servc-right">
+            <h2>Quem Somos</h2>
+            <p>
+              A empresa <strong>WALKERDOG</strong>, surgiu no ano de 2020 por
+              meio da iniciativa de seus 4 integrantes (Alex, Caio, Rafael e
+              Kenia) tendo em vista que esse tipo de serviço/mercado ainda não é
+              muito popularizado no Brasil. Contamos com profissionais altamente
+              qualificados e comprometidos com a segurança e o bem-estar do seu
+              cão. Logo, partimos do princípio de oferecer a melhor opção de
+              lazer para o seu amiguinho de quatro patas e consequentemente a
+              sua comodidade.
+              <strong>CONHEÇA NOSSO SERVIÇO!</strong>
+            </p>
+          </div>
+
+          <div class="servc-left">
+            <h2>Missão</h2>
+            <p>
+              Oferecer um serviço exclusivo e de alta qualidade voltado para
+              cães, priorizando sempre o bem-estar a segurança e o lazer.
+            </p>
+            <h2>Visão</h2>
+            <p>
+              Ser reconhecida nacionalmente como a melhor prestadora de serviços
+              do segmento até 2025.
+            </p>
+            <h2>Valores</h2>
+            <p>1 - Respeito aos animais e a vida em toda a sua forma;</p>
+            <p>2 - Comprometimento e Ética profissional;</p>
+            <p>3 - Reconhecemos os animais como seres sencientes;</p>
+            <p>4 - Oferecer comodidade para nossos clientes.</p>
+          </div>
+
+          <section id="fundadores" class="main-ceo_container">
+            <div class="cards visible">
+              <section id="banner-container">
+                <section id="banner">
+                  <span id="btnLeft"><img src="img/L.png" /></span>
+                  <span id="btnRight"><img src="img/R.png" /></span>
+                </section>
+              </section>
+
+              <div class="fundadores">
+                <h2>Fundadores</h2>
+                <p>Alex, Caio, Rafael, Kenia</p>
+              </div>
+            </div>
+          </section>
+
+          <section id="servicos" class="calc-inf">
+            <p>
+              A <strong>WALKERDOG</strong> oferece um serviço especializado de
+              passeio para cães, conheça nossos valores abaixo:
+            </p>
+            <p>Somente 1 cão | 30 min | R$59,90</p>
+            <p>Somente 1 cão | 60 min | R$119,80</p>
+            <p>Passeios com mais de uma hora de duração (preços a combinar)</p>
+            <p>
+              Quer contratar o serviço para mais de um cão? utilize nossa
+              calculadora ao lado.
+            </p>
+            <p>
+              Na contratação do serviço de passeio para mais de um cão,
+              oferecemos 5% de desconto.
+            </p>
+          </section>
+
+          <section class="calc-calc">
+            <section class="container-calc">
+              <div id="display">
+                <div id="memoria"></div>
+                <div id="entrada-saida"></div>
+              </div>
+              <div class="container-teclados">
+                <div class="container-teclado">
+                  <div id="cientifica">
+                    <input
+                      type="button"
+                      name="op"
+                      class="numBt"
+                      id="op"
+                      value="raiz²"
+                    />
+                    <input
+                      type="button"
+                      name="op"
+                      class="numBt"
+                      id="op"
+                      value="x²"
+                    />
+                    <input
+                      type="button"
+                      name="op"
+                      class="numBt"
+                      id="op"
+                      value="x³"
+                    />
+                  </div>
+                  <div id="displayOpBt">
+                    <input
+                      id="cc"
+                      type="button"
+                      name="CC"
+                      class="numBt"
+                      value="C.C"
+                    />
+                    <input
+                      type="button"
+                      name="C"
+                      class="numBt"
+                      id=""
+                      value="C"
+                    />
+                    <input
+                      type="button"
+                      name="op"
+                      class="numBt"
+                      id="op"
+                      value=" / "
+                    />
+                  </div>
+                  <div id="displayNumBt">
+                    <input
+                      type="button"
+                      name="OK"
+                      class="numBt"
+                      id="b7"
+                      value="7"
+                    />
+                    <input
+                      type="button"
+                      name="OK"
+                      class="numBt"
+                      id="b8"
+                      value="8"
+                    />
+                    <input
+                      type="button"
+                      name="OK"
+                      class="numBt"
+                      id="b9"
+                      value="9"
+                    />
+                    <input
+                      type="button"
+                      name="OK"
+                      class="numBt"
+                      id="b4"
+                      value="4"
+                    />
+                    <input
+                      type="button"
+                      name="OK"
+                      class="numBt"
+                      id="b5"
+                      value="5"
+                    />
+                    <input
+                      type="button"
+                      name="OK"
+                      class="numBt"
+                      id="b6"
+                      value="6"
+                    />
+                    <input
+                      type="button"
+                      name="OK"
+                      class="numBt"
+                      id="b1"
+                      value="1"
+                    />
+                    <input
+                      type="button"
+                      name="OK"
+                      class="numBt"
+                      id="b2"
+                      value="2"
+                    />
+                    <input
+                      type="button"
+                      name="OK"
+                      class="numBt"
+                      id="b3"
+                      value="3"
+                    />
+                    <input
+                      type="button"
+                      name="OK"
+                      class="numBt"
+                      id="b0"
+                      value="0"
+                    />
+                    <input
+                      type="button"
+                      name="OK"
+                      class="numBt"
+                      id=""
+                      value="."
+                    />
+                  </div>
+                </div>
+                <div id="displayOpBt2">
+                  <input
+                    type="button"
+                    name="op"
+                    class="numBt"
+                    id="op"
+                    value=" * "
+                  />
+                  <input
+                    type="button"
+                    name="op"
+                    class="numBt"
+                    id="op"
+                    value=" - "
+                  />
+                  <input
+                    type="button"
+                    name="op"
+                    class="numBt"
+                    id="bma"
+                    value=" + "
+                  />
+                  <input
+                    type="button"
+                    name="res"
+                    class="numBt"
+                    id="big"
+                    value=" ="
+                  />
+                </div>
+              </div>
+            </section>
+          </section>
+
+          <!------------OO--------------->
+
+          <section id="contato" class="container-cadastro">
+            <h2>Deixe seu nome e do Pet para o agendamento.</h2>
+            <div class="cadastro-nomes">
+              <input type="text" id="nomePessoa" placeholder="Nome" />
+              <input type="text" id="nomeDog" placeholder="Nome do pet" />
+            </div>
+            <div class="cadastro-btn">
+              <button id="btnSalvar" onclick="servico.salvar()">Salvar</button>
+              <button id="btnCancelar" onclick="servico.cancelar()">
+                Cancelar
+              </button>
+            </div>
+            <div class="conteudo">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Nome</th>
+                    <th>Pet</th>
+                    <th>Alterar</th>
+                  </tr>
+                </thead>
+                <tbody id="tBody"></tbody>
+              </table>
+            </div>
+          </section>
+        </section>
+
+        <section class="talk">
+          <div class="titulo">
+            <h2>Fale Conosco:</h2>
+          </div>
+          <section class="form">
+            <div class="container">
+              <form class="form-container" name="validaForm" action="#">
+                <!--INPUT REFENTE AO CAMPO NOME-->
+                <label for="nome">Nome:</label>
+                <input id="nome" type="text" class="obrigatorio" />
+
+                <!--INPUT REFENTE AO CAMPO CPF-->
+                <label for="cpf">CPF:</label>
+                <input
+                  id="cpf"
+                  type="text"
+                  maxlength="11"
+                  class="obrigatorio"
+                />
+
+                <!--INPUT REFERENTE AO CAMPO DATA-->
+                <label for="data">Data:</label>
+                <input id="data" type="date" class="obrigatorio" />
+
+                <label for="gen">Sexo:</label>
+                <select class="obrigatorio" id="gen">
+                  <option>Selecione</option>
+                  <option>Masculino</option>
+                  <option>Feminino</option>
+                </select>
+
+                <!-- onblur="validaCampos()" -->
+                <label for="email">E-mail:</label>
+                <input
+                  id="email"
+                  type="email"
+                  onblur="validaCampos()"
+                  class="obrigatorio"
+                />
+
+                <!--INPUT REFENTE AO CAMPO TELEFONE-->
+                <label for="tel">Telefone:</label>
+                <input type="number" id="tel" class="obrigatorio" />
+
+                <!--INPUT REFENTE AO CAMPO ENDEREÇO-->
+                <label for="cep">Informe o CEP:</label>
+                <input
+                  type="text"
+                  id="cep"
+                  maxlength="9"
+                  class="obrigatorio"
+                  onblur="consultaCep()"
+                />
+
+                <label for="logradouro">Rua:</label>
+                <input type="text" id="logradouro" class="obrigatorio" />
+
+                <label for="bairro">Bairro:</label>
+                <input type="text" id="bairro" class="obrigatorio" />
+
+                <label for="localidade">Cidade:</label>
+                <input type="text" id="localidade" class="obrigatorio" />
+
+                <label for="uf">UF:</label>
+                <input type="text" id="uf" class="obrigatorio" />
+
+                <label for="txt-area">Mensagem:</label>
+                <textarea name="" id="txt-area" cols="30" rows="10"></textarea>
+
+                <!--BOTÕES-->
+                <input
+                  type="button"
+                  id="btnEnviar"
+                  class="btn-form-estilo"
+                  value="Enviar"
+                />
+
+                <button type="submit" class="btn-form-estilo">Redefinir</button>
+              </form>
+            </div>
+
+            <!--MODAL-->
+            <div id="caixaMaior">
+              <div id="faixaPreta">
+                <p id="cabecalhoCaixa">Aviso!!!</p>
+              </div>
+              <p id="mensagemCaixa">Texto da caixa de aviso</p>
+              <button id="botaoOk" class="buttonClass">Ok</button>
+            </div>
+          </section>
+        </section>
+      </section>
+    </main>
+
+    <!------------------VLIBRAS------------------>
+    <div vw class="enabled">
+      <div vw-access-button class="active"></div>
+      <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+      </div>
+    </div>
+
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+      new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+
+    <!------------------FOTER------------------------>
+    <footer>
+      <div class="footerRedesSociais">
+        Siga-nos nas nossas redes sociais
+        <ul>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Facebook</a></li>
+        </ul>
+      </div>
+      <div class="rodape">
+        <br />
+        Copyright ©️ 2021 WalkerDog - Todos os direitos reservados.
+        <br />
+      </div>
+    </footer>
+
+    <script src="JS/script.js"></script>
+  </body>
+</html>
